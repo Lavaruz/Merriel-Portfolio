@@ -5,139 +5,330 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Merriel Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <section id="hero" class="px-[10%] bg-[#565D7D] h-screen">
-        <div class="grid grid-cols-10 gap-10">
+        <div class="lg:grid lg:grid-cols-10 gap-10">
             <div class="col-span-7 flex flex-col justify-evenly h-screen">
                 <p class="font-second text-white text-[74px]">Merrielda Schulz</p>
-                <p class="font-thrid text-white text-[80px]">Portfolio</p>
+                <p class="font-thrid text-white text-[60px] lg:text-[80px]">Portfolio</p>
                 <div class="font-forth text-white">
                     <p>Video Editor</p>
                     <p>Selected Portofolio</p>
                 </div>
             </div>
-            <div class="col-span-3">
-                <!-- <p class="font-thrid">Merrielda Schulz</p> -->
-            </div>
-
         </div>
     </section>
 
-    <section id="about-me" class="h-screen px-[10%] bg-[#F6F4F1]">
-        <div class="grid grid-cols-10 gap-20 items-center h-screen justify-between">
-            <div class="col-span-6">
+    <section id="about-me" class="min-h-screen px-[10%] bg-[#F6F4F1] py-[5%]">
+        <div class="flex flex-col-reverse lg:grid lg:grid-cols-10 gap-4 lg:gap-20 lg:items-center min-h-screen justify-between">
+            <div class="lg:col-span-6">
                 <p class="font-thrid text-[70px]">ABOUT ME</p>
                 <div class="font-forth text-xl flex flex-col gap-4">
                     <p>My name is Merrielda Arki Schulz. I am a 22 year old fresh graduate from Jakarta Intsitute of Arts majoring in Video Editing. I am a fast worker, patient, motivated, and i am passionate.</p>
                     <p>I have great communication skills for Bahasa and English, i love making new links of people and learning new things. I used to be a youtuber back in 2014-2019. </p>
                     <p>I enjoy video editing very much and would love to work as a video editor.</p>
                 </div>
+                <button class="mt-6 hover:bg-[#565D7D] hover:text-[#F6F4F1] duration-300 border border-[#565D7D] py-2.5 px-6 rounded-lg font-forth flex gap-2">Download CV <i class="uil uil-file-alt"></i></button>
             </div>
-            <div class="col-span-4 overflow-hidden">
-                <div class="max-w-[350px] overflow-hidden mx-auto lg:mx-0 border-8 border-[#565D7D]">
-                    <img id="basic-profile-pic" src="./img/Profile.jpg" alt="profile-picture" class="w-full h-full object-cover -scale-x-100">
+            <div class="lg:col-span-4">
+                <img id="basic-profile-pic" src="./img/Profile.jpg" alt="profile-picture" class="-scale-x-100 border-8 border-[#565D7D]">
+            </div>
+        </div>
+    </section>
+
+    <section id="work-experience" class="bg-[#F6F4F1] px-[10%] py-[5%] pt-24 lg:pt-0">
+
+        <p class="font-thrid text-4xl mb-10 lg:mb-16">Working Experience</p>
+        <!-- <p class="text-center font-thrid text-xl mb-16">2023</p> -->
+        <div class="flex flex-col lg:grid lg:grid-cols-2 gap-10">
+            <!-- 2023 -->
+
+            <div class="card flex flex-col lg:flex-row gap-4 lg:items-center font-fifth">
+                <div class="lg:w-[200px] lg:h-[120px] overflow-hidden flex items-center">
+                    <img src="./img/2023-desember.png" class="object-cover w-full" alt="">
+                </div>
+                <div class="">
+                    <p class="font-bold text-[#555484]">December 2023.</p>
+                    <p class="font-bold text-[#555484]">Jobdesc: Editor</p>
+                    <div class="mt-2 text-sm">
+                        <p>BTS Video for Video ads - Kominfo.</p>
+                        <p>A project from Titik Sembilan Production House.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card flex flex-col lg:flex-row gap-4 lg:items-center font-fifth">
+                <div class="lg:w-[200px] lg:h-[120px] overflow-hidden flex items-center">
+                    <img src="./img/2023-november-1.png" class="object-cover w-full" alt="">
+                </div>
+                <div class="">
+                    <p class="font-bold text-[#555484]">November 2023.</p>
+                    <p class="font-bold text-[#555484]">Jobdesc: Editor</p>
+                    <div class="mt-2 text-sm">
+                        <p>Content for TitikSembilan’s tiktok account.</p>
+                        <p>Called “Kenapa harus workshop acting?”</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card flex flex-col lg:flex-row gap-4 lg:items-center font-fifth">
+                <div class="lg:w-[200px] lg:h-[120px] overflow-hidden flex items-center">
+                    <img src="./img/2023-november-2.png" class="object-cover w-full" alt="">
+                </div>
+                <div class="">
+                    <p class="font-bold text-[#555484]">November 2023.</p>
+                    <p class="font-bold text-[#555484]">Jobdesc: Editor</p>
+                    <div class="mt-2 text-sm">
+                        <p>Content for TitikSembilan’s tiktok account.</p>
+                        <p>Called “Kenapa harus pakai sepatu?”</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card flex flex-col lg:flex-row gap-4 lg:items-center font-fifth">
+                <div class="lg:w-[200px] lg:h-[120px] overflow-hidden flex items-center">
+                    <img src="./img/2023-agustus.png" class="object-cover w-full" alt="">
+                </div>
+                <div class="">
+                    <p class="font-bold text-[#555484]">August 2023.</p>
+                    <p class="font-bold text-[#555484]">Jobdesc: Editor</p>
+                    <div class="mt-2 text-sm">
+                        <p>A short film for final assignment in campus.</p>
+                        <p>Called "Fake Nails"</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card flex flex-col lg:flex-row gap-4 lg:items-center font-fifth">
+                <div class="lg:w-[200px] lg:h-[120px] overflow-hidden flex items-center">
+                    <img src="./img/2023-february.png" class="object-cover w-full" alt="">
+                </div>
+                <div class="">
+                    <p class="font-bold text-[#555484]">February 2023.</p>
+                    <p class="font-bold text-[#555484]">Jobdesc: Editor</p>
+                    <div class="mt-2 text-sm">
+                        <p>Music Video for Langit by Satine Zaneta</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 2022 -->
+
+            <div class="card flex flex-col lg:flex-row gap-4 lg:items-center font-fifth">
+                <div class="lg:w-[200px] lg:h-[120px] overflow-hidden flex items-center">
+                    <img src="./img/2022-nov.png" class="object-cover w-full" alt="">
+                </div>
+                <div class="">
+                    <p class="font-bold text-[#555484]">Novembar 2022.</p>
+                    <p class="font-bold text-[#555484]">Jobdesc: Assistant Editor and DIT</p>
+                    <div class="mt-2 text-sm">
+                        <p>Video Ads for BTPN Jaya Abadi.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card flex flex-col lg:flex-row gap-4 lg:items-center font-fifth">
+                <div class="lg:w-[200px] lg:h-[120px] overflow-hidden flex items-center">
+                    <img src="./img/2022-oct-3.png" class="object-cover w-full" alt="">
+                </div>
+                <div class="">
+                    <p class="font-bold text-[#555484]">October 2022.</p>
+                    <p class="font-bold text-[#555484]">Jobdesc: Co-Editor</p>
+                    <div class="mt-2 text-sm">
+                        <p>A video for Optik Melawai’s youtube channel.</p>
+                        <p>Video called “Etika memakai sunglasses”</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card flex flex-col lg:flex-row gap-4 lg:items-center font-fifth">
+                <div class="lg:w-[200px] lg:h-[120px] overflow-hidden flex items-center">
+                    <img src="./img/2022-oct-1.png" class="object-cover w-full" alt="">
+                </div>
+                <div class="">
+                    <p class="font-bold text-[#555484]">October 2022.</p>
+                    <p class="font-bold text-[#555484]">Jobdesc: Editor</p>
+                    <div class="mt-2 text-sm">
+                        <p>A video for Optik Melawai’s youtube channel.</p>
+                        <p>Video called “Jenis-jenis frame paket di Optik Melawai”</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card flex flex-col lg:flex-row gap-4 lg:items-center font-fifth">
+                <div class="lg:w-[200px] lg:h-[120px] overflow-hidden flex items-center">
+                    <img src="./img/2022-oct-2.png" class="object-cover w-full" alt="">
+                </div>
+                <div class="">
+                    <p class="font-bold text-[#555484]">October 2022.</p>
+                    <p class="font-bold text-[#555484]">Jobdesc: Editor</p>
+                    <div class="mt-2 text-sm">
+                        <p>A video for Optik Melawai’s youtube channel.</p>
+                        <p>Video called “Masa pakai lensa kontak”</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card flex flex-col lg:flex-row gap-4 lg:items-center font-fifth">
+                <div class="lg:w-[200px] lg:h-[120px] overflow-hidden flex items-center">
+                    <img src="./img/2022-sep.png" class="object-cover w-full" alt="">
+                </div>
+                <div class="">
+                    <p class="font-bold text-[#555484]">September 2022.</p>
+                    <p class="font-bold text-[#555484]">Jobdesc: Offline Editor</p>
+                    <div class="mt-2 text-sm">
+                        <p>Video ads for Hi Atlaz</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card flex flex-col lg:flex-row gap-4 lg:items-center font-fifth">
+                <div class="lg:w-[200px] lg:h-[120px] overflow-hidden flex items-center">
+                    <img src="./img/2022-aug-2.png" class="object-cover w-full" alt="">
+                </div>
+                <div class="">
+                    <p class="font-bold text-[#555484]">August 2022.</p>
+                    <p class="font-bold text-[#555484]">Jobdesc: Editor</p>
+                    <div class="mt-2 text-sm">
+                        <p>A behind the scene video for MyPertamina</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card flex flex-col lg:flex-row gap-4 lg:items-center font-fifth">
+                <div class="lg:w-[200px] lg:h-[120px] overflow-hidden flex items-center">
+                    <img src="./img/2022-aug-1.png" class="object-cover w-full" alt="">
+                </div>
+                <div class="">
+                    <p class="font-bold text-[#555484]">August 2022.</p>
+                    <p class="font-bold text-[#555484]">Jobdesc: Editor</p>
+                    <div class="mt-2 text-sm">
+                        <p>Reels video for Kyat Signature’s Instagram.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card flex flex-col lg:flex-row gap-4 lg:items-center font-fifth">
+                <div class="lg:w-[200px] lg:h-[120px] overflow-hidden flex items-center">
+                    <img src="./img/2022-feb.png" class="object-cover w-full" alt="">
+                </div>
+                <div class="">
+                    <p class="font-bold text-[#555484]">February 2022.</p>
+                    <p class="font-bold text-[#555484]">Jobdesc: Editor and DIT</p>
+                    <div class="mt-2 text-sm">
+                        <p>A short film for an assignment</p>
+                        <p>called “Waktu yang tepat untuk bermain”.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 2021 -->
+
+            <div class="card flex flex-col lg:flex-row gap-4 lg:items-center font-fifth">
+                <div class="lg:w-[200px] lg:h-[120px] overflow-hidden flex items-center">
+                    <img src="./img/2021-des.png" class="object-cover w-full" alt="">
+                </div>
+                <div class="">
+                    <p class="font-bold text-[#555484]">December 2021.</p>
+                    <p class="font-bold text-[#555484]">Jobdesc: Assistant Editor</p>
+                    <div class="mt-2 text-sm">
+                        <p>Music Video for Suaka sementara by Ratama</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card flex flex-col lg:flex-row gap-4 lg:items-center font-fifth">
+                <div class="lg:w-[200px] lg:h-[120px] overflow-hidden flex items-center">
+                    <img src="./img/2021-nov-1.png" class="object-cover w-full" alt="">
+                </div>
+                <div class="">
+                    <p class="font-bold text-[#555484]">November 2021.</p>
+                    <p class="font-bold text-[#555484]">Jobdesc: Editor and DIT</p>
+                    <div class="mt-2 text-sm">
+                        <p>A video for L’oreal’s yearly event.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card flex flex-col lg:flex-row gap-4 lg:items-center font-fifth">
+                <div class="lg:w-[200px] lg:h-[120px] overflow-hidden flex items-center">
+                    <img src="./img/2021-nov-2.png" class="object-cover w-full" alt="">
+                </div>
+                <div class="">
+                    <p class="font-bold text-[#555484]">November 2021.</p>
+                    <p class="font-bold text-[#555484]">Jobdesc: Editor and DIT</p>
+                    <div class="mt-2 text-sm">
+                        <p>A video for L’oreal’s yearly event.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card flex flex-col lg:flex-row gap-4 lg:items-center font-fifth">
+                <div class="lg:w-[200px] lg:h-[120px] overflow-hidden flex items-center">
+                    <img src="./img/2021-oct-1.png" class="object-cover w-full" alt="">
+                </div>
+                <div class="">
+                    <p class="font-bold text-[#555484]">October 2021.</p>
+                    <p class="font-bold text-[#555484]">Jobdesc: Assistant Editor</p>
+                    <div class="mt-2 text-sm">
+                        <p>YOU C1000 Commercial for an assignment.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card flex flex-col lg:flex-row gap-4 lg:items-center font-fifth">
+                <div class="lg:w-[200px] lg:h-[120px] overflow-hidden flex items-center">
+                    <img src="./img/2021-oct-2.png" class="object-cover w-full" alt="">
+                </div>
+                <div class="">
+                    <p class="font-bold text-[#555484]">October 2021.</p>
+                    <p class="font-bold text-[#555484]">Jobdesc: Editor</p>
+                    <div class="mt-2 text-sm">
+                        <p>A short documentary video for Yahintara.</p>
+                        <p>Nominee of IAI Awards (Ikatan Arsitektur </p>
+                        <p>Indonesia & Nominee of AGA KHAN Awards).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card flex flex-col lg:flex-row gap-4 lg:items-center font-fifth">
+                <div class="lg:w-[200px] lg:h-[120px] overflow-hidden flex items-center">
+                    <img src="./img/2021-jan.png" class="object-cover w-full" alt="">
+                </div>
+                <div class="">
+                    <p class="font-bold text-[#555484]">January 2021.</p>
+                    <p class="font-bold text-[#555484]">Jobdesc: Assistant Editor</p>
+                    <div class="mt-2 text-sm">
+                        <p>A short documentary for an assignment</p>
+                        <p>called “Cara membuat sasate”.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 2020 -->
+
+            <div class="card flex flex-col lg:flex-row gap-4 lg:items-center font-fifth">
+                <div class="lg:w-[200px] lg:h-[120px] overflow-hidden flex items-center">
+                    <img src="./img/2020-aug.png" class="object-cover w-full" alt="">
+                </div>
+                <div class="">
+                    <p class="font-bold text-[#555484]">August 2020.</p>
+                    <p class="font-bold text-[#555484]">Jobdesc: Editor</p>
+                    <div class="mt-2 text-sm">
+                        <p>A short film for an assignment</p>
+                        <p>called “Love Yourself”.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="work-experience" class="bg-[#F6F4F1] px-[10%] py-[5%]">
-
-        <p class="font-thrid text-4xl mb-16">Working Experience</p>
-
-        <div class="grid grid-cols-2 gap-10">
-            <!-- KIRI -->
-            <div class="flex flex-col gap-20">
-                <div class="card flex gap-4 items-center font-fifth">
-                    <div class="w-[200px] h-[120px] bg-white"></div>
-                    <div class="">
-                        <p class="font-bold text-[#555484]">December 2023.</p>
-                        <p class="font-bold text-[#555484]">Jobdesc: Editor</p>
-                        <div class="mt-2 text-sm">
-                            <p>BTS Video for Video ads - Kominfo.</p>
-                            <p>A project from Titik Sembilan Production House.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card flex gap-4 items-center font-fifth">
-                    <div class="w-[200px] h-[120px] bg-white"></div>
-                    <div class="">
-                        <p class="font-bold text-[#555484]">December 2023.</p>
-                        <p class="font-bold text-[#555484]">Jobdesc: Editor</p>
-                        <div class="mt-2 text-sm">
-                            <p>BTS Video for Video ads - Kominfo.</p>
-                            <p>A project from Titik Sembilan Production House.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card flex gap-4 items-center font-fifth">
-                    <div class="w-[200px] h-[120px] bg-white"></div>
-                    <div class="">
-                        <p class="font-bold text-[#555484]">December 2023.</p>
-                        <p class="font-bold text-[#555484]">Jobdesc: Editor</p>
-                        <div class="mt-2 text-sm">
-                            <p>BTS Video for Video ads - Kominfo.</p>
-                            <p>A project from Titik Sembilan Production House.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- KANAN -->
-            <div class="flex flex-col gap-20">
-                <div class="card flex gap-4 items-center font-fifth">
-                    <div class="w-[200px] h-[120px] bg-white"></div>
-                    <div class="">
-                        <p class="font-bold text-[#555484]">December 2023.</p>
-                        <p class="font-bold text-[#555484]">Jobdesc: Editor</p>
-                        <div class="mt-2 text-sm">
-                            <p>BTS Video for Video ads - Kominfo.</p>
-                            <p>A project from Titik Sembilan Production House.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card flex gap-4 items-center font-fifth">
-                    <div class="w-[200px] h-[120px] bg-white"></div>
-                    <div class="">
-                        <p class="font-bold text-[#555484]">December 2023.</p>
-                        <p class="font-bold text-[#555484]">Jobdesc: Editor</p>
-                        <div class="mt-2 text-sm">
-                            <p>BTS Video for Video ads - Kominfo.</p>
-                            <p>A project from Titik Sembilan Production House.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card flex gap-4 items-center font-fifth">
-                    <div class="w-[200px] h-[120px] bg-white"></div>
-                    <div class="">
-                        <p class="font-bold text-[#555484]">December 2023.</p>
-                        <p class="font-bold text-[#555484]">Jobdesc: Editor</p>
-                        <div class="mt-2 text-sm">
-                            <p>BTS Video for Video ads - Kominfo.</p>
-                            <p>A project from Titik Sembilan Production House.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="youtube" class="bg-[#F6F4F1] h-screen px-[10%] py-[5%] text-center flex flex-col items-center">
+    <section id="youtube" class="bg-[#F6F4F1] min-h-screen px-[10%] py-[10%] text-center flex flex-col items-center pt-40 lg:pt-0">
         <p class="font-second text-[50px]">My Youtube Channel</p>
-        <p class="font-forth text-2xl mt-6">youtube.com/@merrielsc</p>
-        <div class="w-1/2 h-[400px] bg-white my-6"></div>
+        <a href="https://www.youtube.com/@merrielsc" class="font-forth text-2xl mt-6">youtube.com/@merrielsc</a>
+        <div class="lg:w-3/4 w-full lg:my-6 py-10 lg:py-0">
+            <img src="./img/Youtube.png" class="object-cover w-full" alt="">
+        </div>
         <div class="font-forth">
             <p>I used to be a youtuber from 2014-Present. Worked with Famous.ID.</p>
             <p>I edited all of my videos that i uploaded on my Youtube Channel.</p>
         </div>
     </section>
 
-    <section id="hard-skill" class="min-h-screen bg-[#F6F4F1] px-[10%] pt-20 pb-[20]">
-        <div class="grid grid-cols-10 gap-20 items-center">
-            <div class="col-span-6 h-full flex flex-col justify-center">
-                <p class="font-bold text-[100px] leading-[90px]">HARD<br>SKILLS</p>
+    <section id="hard-skill" class="min-h-screen bg-[#F6F4F1] px-[10%] pt-20 lg:pb-0">
+        <div class="flex flex-col lg:grid lg:grid-cols-10 gap-20 items-center">
+            <div class="col-span-6 lg:h-full flex flex-col justify-center">
+                <p class="font-bold text-[80px] lg:text-[100px] leading-[90px]">HARD<br>SKILLS</p>
                 <p class="font-forth text-xl mt-10">These are the editing programs that i use to work with,
                     <br>and also some programs for writing and presentation purposes.</p>
             </div>
@@ -190,12 +381,12 @@
         </div>
     </section>
 
-    <section class="bg-[#F6F4F1] min-h-screen flex flex-col justify-center items-center text-center">
+    <section class="bg-[#F6F4F1] px-[10%] min-h-screen flex flex-col justify-center items-center text-center">
         <p class="font-second text-[60px] mb-14">My Contacts</p>
         <div class="font-forth mb-10 text-lg flex flex-col gap-2">
             <p>085171101402</p>
-            <p>merrieldaschulz@gmail.com</p>
-            <p>https://www.linkedin.com/in/merrielda-arki-schulz-7aa75223b/</p>
+            <a href="mailto:merrieldaschulz@gmail.com">merrieldaschulz@gmail.com</a>
+            <a href="https://www.linkedin.com/in/merrielda-schulz-7aa75223b/">https://www.linkedin.com/in/merrielda-schulz-7aa75223b/</a>
         </div>
         <p class="font-forth text-lg">Kelapa Gading. 
            <br>Jakarta, Indonesia</p>
